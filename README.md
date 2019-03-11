@@ -1,3 +1,3 @@
 # quant_experiment
 
-Make it easier for you to experiment quantitative ideas.
+Make it easier for you to experiment with quantitative ideas.
