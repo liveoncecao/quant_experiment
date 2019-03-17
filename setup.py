@@ -13,7 +13,7 @@ setup(
     name='quant_experiment',
     version='1.0.0',
     description='Python module to get stock and option information through Wed Scraping and Alpha Vantage API',
-    long_description=long_description,
+    long_description_content_type=long_description,
     url='https://github.com/liveoncecao/quant_experiment',
     author='Quentin Sun',
     author_email='qsun.career@gmail.com',
