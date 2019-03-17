@@ -1,9 +1,9 @@
 import requests
 import pandas as pd
-from .quantexperiment import AlphaVantage as av
 from time import mktime
 from datetime import datetime, date
 from .constants import _Y_API
+from .constants import _ALPHA_VANTAGE_API_URL
 from .mathformulas import BlackandScholes
 from .mathformulas import riskfree
 
@@ -61,12 +61,11 @@ class VanillaOption:
         """
         return self._option_info
 
-    def BS_Info(self,key=None,q=0):
+    def BS_Info(self,key=None,info_name='implied_vol',q=0):
         """
         Based on Black Scholes model, calculated implied vol will lose its accuracy for DeepInTheMoney
         and DeepOutOfMoney options with relatively short time to maturity, use with your own discretion
         """
-
         stock_info = Stock(self._symbol,key)
         self._stock_price = stock_info.price
         self._tau = (self._date - date.today()).days/365
@@ -74,13 +73,18 @@ class VanillaOption:
 
         self.BandS = BlackandScholes(self._stock_price,self._strike,self._tau,self._r,
                                       self._option_info['bid'][0],self._type,q)
-        return self.BandS.implied_vol
 
+        if info_name == 'implied_vol':
+            return self.BandS.imp_vol
+        if info_name == 'greeks':
+            columns = ['delta', 'gamma', 'vega', 'theta', 'rho']
+            return pd.DataFrame([[self.BandS.delta(), self.BandS.gamma(), self.BandS.vega(),
+                                  self.BandS.theta(), self.BandS.rho()]], columns=columns)
 
 
 class Stock:
     def __init__(self,symbol,key=None):
-        url = "{}function={}".format(av._ALPHA_VANTAGE_API_URL, 'GlOBAL_QUOTE')
+        url = "{}function={}".format(_ALPHA_VANTAGE_API_URL, 'GlOBAL_QUOTE')
         url = '{}&{}={}'.format(url, 'symbol', symbol.upper())
         url = '{}&apikey={}'.format(url, key)
         response = list(requests.get(url).json()['Global Quote'].values())
