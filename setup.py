@@ -4,7 +4,7 @@ from os import path
 
 here = path.abspath(path.dirname(__file__))
 try:
-    with open(path.join(here, 'README.md'), encoding='utf-8') as f:
+    with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
         long_description = f.read()
 except IOError:
     long_description = 'Make it easier for you to experiment with quantitative ideas.'
