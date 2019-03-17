@@ -24,7 +24,7 @@ setup(
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
-        'Intended Audience :: Financial Industry',
+        'Intended Audience :: Financial and Insurance Industry',
         'Topic :: Office/Business :: Financial :: Investment',
         'Topic :: Software Development :: Libraries :: Python Modules',
         'Operating System :: OS Independent',
