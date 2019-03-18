@@ -42,7 +42,7 @@ Data is retrieved from Alpha Vantage API free services, make sure initializing a
 .. code:: python
 
     from quant_experiment import finproducts
-        stock_demo = Stock('AAPL',key)
+        stock_demo = finproducts.Stock('AAPL',key)
         stock_demo.price #return realtime stock price
         stock_demo.latestTradingDay #lastest trading day
         stock_demo.volume #volume
@@ -52,7 +52,7 @@ Data is retrieved from Alpha Vantage API free services, make sure initializing a
 .. code:: python
 
     from quant_experiment import finproducts
-        option_demo = VanillaOption('AAPL', 21, 6, 2019, 180, 'calls')
+        option_demo = finproducts.VanillaOption('AAPL', 21, 6, 2019, 180, 'calls')
         #call option with expiration date 2019-06-21 and strike price 180
         option_demo.option_info()
 
@@ -66,7 +66,7 @@ Giving us output as:
 .. code:: python
 
     from quant_experiment import finproducts
-        option_demo = VanillaOption('AAPL', 21, 6, 2019, 180, 'calls')
+        option_demo = finproducts.VanillaOption('AAPL', 21, 6, 2019, 180, 'calls')
         option_demo.BS_Info(key) #return implied volatility by default
         option_demo.BS_Info(key,'greeks') #return delta, gamma, vega, theta and rho
 
