@@ -1,6 +1,6 @@
-=======
+================
 Quant_Experiment
-=======
+================
 
 ..  image:: https://img.shields.io/pypi/v/quant_experiment.svg
     :target: https://pypi.python.org/pypi/quant_experiment
@@ -36,7 +36,7 @@ Data is retrieved from Alpha Vantage API free services, make sure initializing a
 .. code:: python
 
     key = "YOUR_API_KEY"
-    
+
 1. Operation on stock data
 
 .. code:: python
@@ -46,21 +46,21 @@ Data is retrieved from Alpha Vantage API free services, make sure initializing a
         stock_demo.price #return realtime stock price
         stock_demo.latestTradingDay #lastest trading day
         stock_demo.volume #volume
-        
+
 2. Operation on option data
 
 .. code:: python
 
     from quant_experiment import finproducts
-        option_demo = VanillaOption('AAPL', 21, 6, 2019, 180, 'calls') 
+        option_demo = VanillaOption('AAPL', 21, 6, 2019, 180, 'calls')
         #call option with expiration date 2019-06-21 and strike price 180
-        option_demo.option_info() 
-        
+        option_demo.option_info()
+
 Giving us output as:
 
 .. figure:: https://github.com/liveoncecao/quant_experiment/blob/master/images/option_info.png?raw=true
    :alt: alias of image
-   
+
 3. Return option property based on Black-Scholes
 
 .. code:: python
@@ -69,17 +69,8 @@ Giving us output as:
         option_demo = VanillaOption('AAPL', 21, 6, 2019, 180, 'calls')
         option_demo.BS_Info(key) #return implied volatility by default
         option_demo.BS_Info(key,'greeks') #return delta, gamma, vega, theta and rho
-        
-       
+
+
 Contributing
 ========
 All contributions are welcome.
-    
-    
-    
-    
-    
-    
-
-
-
