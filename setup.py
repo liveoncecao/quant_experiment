@@ -35,5 +35,5 @@ setup(
         'Programming Language :: Python :: 3.7',
     ],
     keywords=['stocks', 'market', 'options', 'pricing', 'quant', 'quotes', 'tickers', 'symbol'],
-    install_requires=['requests', 'pandas', 'beautifulsoup4'],
+    install_requires=['requests', 'pandas', 'beautifulsoup4', 'datetime'],
 )
