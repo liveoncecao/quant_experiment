@@ -72,5 +72,5 @@ Giving us output as:
 
 
 Contributing
-========
+============
 All contributions are welcome.
