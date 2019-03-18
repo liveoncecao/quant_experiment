@@ -16,7 +16,7 @@ class VanillaOption:
         :param m: e.g. 1,2,....,12
         :param y: e.g. 2018,2019
         :param strike: e.g. 100,105
-        :param type: e.g. 'call' or 'put'
+        :param type: e.g. 'calls' or 'puts'
         """
 
         self._strike = strike
@@ -52,6 +52,7 @@ class VanillaOption:
                 break
         found['expiration'] = datetime.utcfromtimestamp(found['expiration']).date()
         found['lastTradeDate'] = datetime.utcfromtimestamp(found['lastTradeDate']).date()
+        self._last_trade_date = found['lastTradeDate']
         self._option_info = pd.DataFrame(columns=found.keys())
         self._option_info.loc[0] = list(found.values())
 
@@ -68,11 +69,11 @@ class VanillaOption:
         """
         stock_info = Stock(self._symbol,key)
         self._stock_price = stock_info.price
-        self._tau = (self._date - date.today()).days/365
+        self._tau = (self._date - self._last_trade_date).days/365
         self._r = riskfree()(self._tau)
 
         self.BandS = BlackandScholes(self._stock_price,self._strike,self._tau,self._r,
-                                      self._option_info['bid'][0],self._type,q)
+                                      self._option_info['lastPrice'][0],self._type,q)
 
         if info_name == 'implied_vol':
             return self.BandS.imp_vol

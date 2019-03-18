@@ -41,7 +41,7 @@ class BlackandScholes:
         :param K:
         :param tau:
         :param r:
-        :param price: the bid price is used here
+        :param price: the last traded price is used here
         :param op_type:
         :param q:
         """

@@ -1,2 +1,0 @@
-,contractSymbol,strike,currency,lastPrice,change,percentChange,volume,openInterest,bid,ask,contractSize,expiration,lastTradeDate,impliedVolatility,inTheMoney
-0,AAPL190621C00180000,180.0,USD,12.4,1.3499994,12.21719,1876,16864,12.25,12.4,REGULAR,2019-06-21,2019-03-15,0.24069973175048825,True
