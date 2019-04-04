@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="aacf61ea-91e2-4a17-acce-f9ad71621733" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quant_experiment/finproducts.py" beforeDir="false" afterPath="$PROJECT_DIR$/quant_experiment/finproducts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quant_experiment/mathformulas.py" beforeDir="false" afterPath="$PROJECT_DIR$/quant_experiment/mathformulas.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quant_experiment/option_info.csv" beforeDir="false" afterPath="$PROJECT_DIR$/quant_experiment/option_info.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quant_experiment/quantexperiment.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/quant_experiment/quantexperiment.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,7 +15,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/quant_experiment/finproducts.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
+            <state relative-caret-position="322">
               <caret line="72" column="30" selection-start-line="72" selection-start-column="30" selection-end-line="72" selection-end-column="30" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
@@ -40,7 +36,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/quant_experiment/mathformulas.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
+            <state relative-caret-position="1695">
               <caret line="120" column="7" selection-start-line="120" selection-start-column="7" selection-end-line="120" selection-end-column="7" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
@@ -52,7 +48,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/setup.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
+            <state relative-caret-position="465">
               <caret line="33" column="46" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
@@ -97,7 +93,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="44" />
-    <option name="y" value="186" />
+    <option name="y" value="66" />
     <option name="width" value="1194" />
     <option name="height" value="685" />
   </component>
@@ -109,6 +105,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -125,7 +122,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -157,8 +153,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="44" y="186" width="1194" height="685" extended-state="0" />
-    <editor active="true" />
+    <frame x="44" y="66" width="1194" height="685" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2634271" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -185,13 +180,7 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/quant_experiment/timeseries.py" />
-    <entry file="file://$PROJECT_DIR$/quant_experiment/quantexperiment.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/quant_experiment/quantexperiment.ipynb" />
     <entry file="file://$PROJECT_DIR$/quant_experiment/.ipynb_checkpoints/finproducts.py" />
     <entry file="file://$PROJECT_DIR$/quant_experiment/datapool.py" />
     <entry file="file://$PROJECT_DIR$/quant_experiment/quantexperiment.py">
@@ -205,30 +194,11 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/quant_experiment/setup.py" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="30">
-            <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="61" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/setup.py">
+    <entry file="file://$PROJECT_DIR$/README.md" />
+    <entry file="file://$PROJECT_DIR$/quant_experiment/finproducts.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="46" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quant_experiment/mathformulas.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="120" column="7" selection-start-line="120" selection-start-column="7" selection-end-line="120" selection-end-column="7" />
+        <state relative-caret-position="322">
+          <caret line="72" column="30" selection-start-line="72" selection-start-column="30" selection-end-line="72" selection-end-column="30" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
@@ -242,12 +212,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/quant_experiment/finproducts.py">
+    <entry file="file://$PROJECT_DIR$/quant_experiment/mathformulas.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="72" column="30" selection-start-line="72" selection-start-column="30" selection-end-line="72" selection-end-column="30" />
+        <state relative-caret-position="1695">
+          <caret line="120" column="7" selection-start-line="120" selection-start-column="7" selection-end-line="120" selection-end-column="7" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="33" column="46" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
